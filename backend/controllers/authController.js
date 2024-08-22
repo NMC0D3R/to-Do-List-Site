@@ -158,3 +158,4 @@ exports.logOut = function (req, res, next) {
     user: null,
   });
 };
+console.log("hello");
