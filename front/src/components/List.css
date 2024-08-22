@@ -1,0 +1,88 @@
+.accordion-item {
+  border: 1px solid #ccc; /* This creates the border between accordion items */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  width: 60%;
+  margin: 0 auto 10px auto; /* Centers the accordion */
+}
+
+.accordion-header {
+  background-color: #f7f7f7;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between; /* Space between content and priority dot */
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header.completed {
+  text-decoration: line-through;
+  color: #888; /* Dimmed text color for completed tasks */
+}
+
+.accordion-header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-name {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.task-date {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.priority-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.priority-dot.red {
+  background-color: red;
+}
+
+.priority-dot.yellow {
+  background-color: yellow;
+}
+
+.priority-dot.green {
+  background-color: green;
+}
+
+.accordion-body {
+  padding: 15px;
+  background-color: white;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.task-actions button {
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 4px;
+}
+
+.task-actions button:hover {
+  background-color: #45a049;
+}
+
+.accordion-header:hover {
+  background-color: #e0e0e0;
+}

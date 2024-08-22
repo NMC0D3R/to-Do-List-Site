@@ -1,0 +1,46 @@
+.task-item.red {
+  border-left: 100px solid red;
+}
+.task-item.yellow {
+  border-left: 100px solid yellow;
+}
+.task-item.green {
+  border-left: 100px solid green;
+}
+.task-item.completed {
+  text-decoration: line-through;
+}
+.task-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form select,
+.task-form button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+.task-form button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px;
+  text-transform: uppercase;
+}
+
+.task-form button:hover {
+  background-color: #45a049;
+}
+.todolist-app {
+  display: flex;
+  justify-content: center;
+}
